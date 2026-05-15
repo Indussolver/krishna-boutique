@@ -444,3 +444,14 @@ navItems.forEach(function(item){
 // ======================================
 // END OF JAVASCRIPT
 // ======================================
+// MOBILE MENU BUTTON
+
+const menuBtn = document.getElementById("menuBtn");
+
+const mobileNav = document.getElementById("mobileNav");
+
+menuBtn.addEventListener("click", function () {
+
+    mobileNav.classList.toggle("showMenu");
+
+});
