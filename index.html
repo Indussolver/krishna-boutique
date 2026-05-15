@@ -1,81 +1,708 @@
 <!DOCTYPE html>
+<html lang="en">
 
-  </section>
+<head>
 
+    <meta charset="UTF-8">
 
-  <!-- ABOUT -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <section class="about" id="about">
+    <title>Krishna Boutique | Premium Fashion Boutique</title>
 
-    <div class="about-text">
+    <!-- CSS FILE -->
 
-      <h2>About Krishna Boutique</h2>
+    <link rel="stylesheet" href="style.css">
 
-      <p>
-        Krishna Boutique is a Delhi based fashion boutique offering premium ethnic wear,
-        designer dresses, bridal collections and trendy fashion styles.
-      </p>
+    <!-- GOOGLE FONTS -->
 
-      <p>
-        We believe fashion should feel elegant, stylish and comfortable.
-      </p>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
 
-    </div>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-  </section>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
 
+    <!-- FONT AWESOME -->
 
-  <!-- CONTACT -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <section class="contact" id="contact">
+</head>
 
-    <h2>Contact Us</h2>
+<body>
 
-    <div class="contact-box">
+    <!-- ========================= -->
+    <!-- NAVBAR START -->
+    <!-- ========================= -->
 
-      <form id="contactForm">
+    <header>
 
-        <input type="text" placeholder="Your Name" required>
+        <div class="logo">
 
-        <input type="email" placeholder="Your Email" required>
+            <h1>Krishna Boutique</h1>
 
-        <textarea placeholder="Your Message"></textarea>
+        </div>
 
-        <button type="submit">Send Message</button>
+        <nav>
 
-      </form>
+            <ul>
 
+                <li><a href="#home">Home</a></li>
 
-      <div class="address">
+                <li><a href="#collection">Collection</a></li>
 
-        <h3>Visit Our Boutique</h3>
+                <li><a href="#about">About</a></li>
 
-        <p>
-          E166, JJ Colony, Sector 25,
-          Rohini, Delhi
-        </p>
+                <li><a href="#services">Services</a></li>
 
-        <p>Email: krishnaboutique@gmail.com</p>
+                <li><a href="#reviews">Reviews</a></li>
 
-        <p>Phone: +91 9876543210</p>
+                <li><a href="#contact">Contact</a></li>
 
-      </div>
+            </ul>
 
-    </div>
+        </nav>
 
-  </section>
+        <div class="nav-btn">
 
+            <button onclick="shopNow()">Shop Now</button>
 
-  <!-- FOOTER -->
+        </div>
 
-  <footer>
-    <p>
-      © 2026 Krishna Boutique | Designed With Love
-    </p>
-  </footer>
+    </header>
 
+    <!-- ========================= -->
+    <!-- HERO SECTION -->
+    <!-- ========================= -->
 
-  <script src="script.js"></script>
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+
+            <span class="hero-tag">
+                Premium Boutique Collection
+            </span>
+
+            <h1>
+
+                Discover Elegant Fashion <br>
+
+                Designed For Every Woman
+
+            </h1>
+
+            <p>
+
+                Krishna Boutique brings you stylish ethnic wear, designer suits,
+                bridal collections, modern fashion and premium outfits crafted
+                with elegance and comfort.
+
+            </p>
+
+            <div class="hero-buttons">
+
+                <button class="primary-btn" onclick="shopNow()">
+
+                    Explore Collection
+
+                </button>
+
+                <button class="secondary-btn">
+
+                    Visit Boutique
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- FEATURES -->
+    <!-- ========================= -->
+
+    <section class="features">
+
+        <div class="feature-box">
+
+            <i class="fa-solid fa-truck"></i>
+
+            <h3>Fast Delivery</h3>
+
+            <p>
+                Quick and secure delivery across Delhi and nearby locations.
+            </p>
+
+        </div>
+
+        <div class="feature-box">
+
+            <i class="fa-solid fa-shirt"></i>
+
+            <h3>Premium Quality</h3>
+
+            <p>
+                High quality fabrics with elegant and modern designs.
+            </p>
+
+        </div>
+
+        <div class="feature-box">
+
+            <i class="fa-solid fa-star"></i>
+
+            <h3>Trending Fashion</h3>
+
+            <p>
+                Latest boutique fashion collections updated regularly.
+            </p>
+
+        </div>
+
+        <div class="feature-box">
+
+            <i class="fa-solid fa-heart"></i>
+
+            <h3>Made With Love</h3>
+
+            <p>
+                Carefully designed outfits for style and comfort.
+            </p>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- COLLECTION SECTION -->
+    <!-- ========================= -->
+
+    <section class="collection" id="collection">
+
+        <div class="section-title">
+
+            <span>Fashion Collection</span>
+
+            <h2>Our Featured Products</h2>
+
+            <p>
+
+                Explore premium boutique collections specially designed
+                for weddings, parties, festivals and daily fashion.
+
+            </p>
+
+        </div>
+
+        <div class="collection-container">
+
+            <!-- PRODUCT 1 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=1200&auto=format&fit=crop"
+                        alt="Designer Lehenga">
+
+                    <div class="product-icons">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>Designer Lehenga</h3>
+
+                    <p>
+                        Elegant bridal lehenga with premium embroidery.
+                    </p>
+
+                    <div class="price-box">
+
+                        <span class="price">₹4,999</span>
+
+                        <button>Add To Cart</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 2 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1583391733956-6c77a45d58f0?q=80&w=1200&auto=format&fit=crop"
+                        alt="Traditional Suit">
+
+                    <div class="product-icons">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>Traditional Suit</h3>
+
+                    <p>
+                        Stylish traditional suit for festivals and events.
+                    </p>
+
+                    <div class="price-box">
+
+                        <span class="price">₹2,499</span>
+
+                        <button>Add To Cart</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 3 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop"
+                        alt="Party Wear Gown">
+
+                    <div class="product-icons">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>Party Wear Gown</h3>
+
+                    <p>
+                        Modern party wear gown with luxury finishing.
+                    </p>
+
+                    <div class="price-box">
+
+                        <span class="price">₹3,299</span>
+
+                        <button>Add To Cart</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT 4 -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1200&auto=format&fit=crop"
+                        alt="Wedding Collection">
+
+                    <div class="product-icons">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>Wedding Collection</h3>
+
+                    <p>
+                        Premium wedding fashion collection for special moments.
+                    </p>
+
+                    <div class="price-box">
+
+                        <span class="price">₹5,999</span>
+
+                        <button>Add To Cart</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- ABOUT SECTION -->
+    <!-- ========================= -->
+
+    <section class="about" id="about">
+
+        <div class="about-image">
+
+            <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop"
+                alt="Boutique">
+
+        </div>
+
+        <div class="about-content">
+
+            <span>About Krishna Boutique</span>
+
+            <h2>
+
+                Fashion That Reflects Style,
+                Elegance & Confidence
+
+            </h2>
+
+            <p>
+
+                Krishna Boutique is a Delhi based fashion boutique located
+                in Rohini. We provide modern ethnic wear, party wear,
+                bridal collections and stylish designer outfits crafted
+                with premium fabrics and latest trends.
+
+            </p>
+
+            <p>
+
+                Our mission is to deliver fashionable, comfortable and
+                elegant clothing that makes every woman feel confident.
+
+            </p>
+
+            <div class="about-info">
+
+                <div class="info-box">
+
+                    <h3>10+</h3>
+
+                    <p>Years Experience</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>500+</h3>
+
+                    <p>Happy Customers</p>
+
+                </div>
+
+                <div class="info-box">
+
+                    <h3>100+</h3>
+
+                    <p>Latest Designs</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- SERVICES -->
+    <!-- ========================= -->
+
+    <section class="services" id="services">
+
+        <div class="section-title">
+
+            <span>Our Services</span>
+
+            <h2>Why Choose Krishna Boutique</h2>
+
+        </div>
+
+        <div class="service-container">
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-scissors"></i>
+
+                <h3>Custom Stitching</h3>
+
+                <p>
+                    Personalized stitching according to your style and fitting.
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-gem"></i>
+
+                <h3>Premium Designs</h3>
+
+                <p>
+                    Unique and trendy designs made with elegant detailing.
+                </p>
+
+            </div>
+
+            <div class="service-card">
+
+                <i class="fa-solid fa-crown"></i>
+
+                <h3>Bridal Collection</h3>
+
+                <p>
+                    Luxury bridal dresses designed for your special day.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- REVIEW SECTION -->
+    <!-- ========================= -->
+
+    <section class="reviews" id="reviews">
+
+        <div class="section-title">
+
+            <span>Customer Reviews</span>
+
+            <h2>What Our Customers Say</h2>
+
+        </div>
+
+        <div class="review-container">
+
+            <div class="review-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Amazing boutique collection and premium quality dresses.
+                    Totally loved the designs and fitting.
+
+                </p>
+
+                <h4>Priya Sharma</h4>
+
+            </div>
+
+            <div class="review-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    One of the best boutiques in Delhi.
+                    Elegant designs and affordable prices.
+
+                </p>
+
+                <h4>Riya Verma</h4>
+
+            </div>
+
+            <div class="review-card">
+
+                <i class="fa-solid fa-quote-left"></i>
+
+                <p>
+
+                    Beautiful bridal collection with modern fashion styles.
+                    Highly recommended boutique.
+
+                </p>
+
+                <h4>Anjali Gupta</h4>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- CONTACT SECTION -->
+    <!-- ========================= -->
+
+    <section class="contact" id="contact">
+
+        <div class="contact-left">
+
+            <span>Contact Us</span>
+
+            <h2>Visit Krishna Boutique</h2>
+
+            <p>
+
+                We would love to welcome you to our boutique.
+                Visit us for premium fashion collections and latest designs.
+
+            </p>
+
+            <div class="contact-details">
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <p>
+                        E166, JJ Colony, Sector 25, Rohini, Delhi
+                    </p>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <p>
+                        +91 9876543210
+                    </p>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <p>
+                        krishnaboutique@gmail.com
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="contact-right">
+
+            <form id="contactForm">
+
+                <input type="text" placeholder="Your Name" required>
+
+                <input type="email" placeholder="Your Email" required>
+
+                <input type="text" placeholder="Subject">
+
+                <textarea placeholder="Your Message"></textarea>
+
+                <button type="submit">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- ========================= -->
+    <!-- FOOTER -->
+    <!-- ========================= -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div class="footer-logo">
+
+                <h2>Krishna Boutique</h2>
+
+                <p>
+
+                    Elegant fashion boutique in Delhi offering premium
+                    designer collections and trendy ethnic wear.
+
+                </p>
+
+            </div>
+
+            <div class="footer-links">
+
+                <h3>Quick Links</h3>
+
+                <a href="#home">Home</a>
+
+                <a href="#collection">Collection</a>
+
+                <a href="#about">About</a>
+
+                <a href="#contact">Contact</a>
+
+            </div>
+
+            <div class="footer-social">
+
+                <h3>Follow Us</h3>
+
+                <div class="social-icons">
+
+                    <i class="fa-brands fa-instagram"></i>
+
+                    <i class="fa-brands fa-facebook-f"></i>
+
+                    <i class="fa-brands fa-whatsapp"></i>
+
+                    <i class="fa-brands fa-youtube"></i>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            <p>
+
+                © 2026 Krishna Boutique | All Rights Reserved
+
+            </p>
+
+        </div>
+
+    </footer>
+
+    <!-- JS FILE -->
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
