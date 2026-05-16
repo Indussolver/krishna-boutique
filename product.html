@@ -1,56 +1,565 @@
+```html id="products-html-krishna-boutique"
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - Krishna Boutique</title>
-    <link rel="stylesheet" href="css/products.css">
+
+    <title>Products | Krishna Boutique</title>
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="products.css">
+
+    <!-- GOOGLE FONT -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
 </head>
+
 <body>
 
-<header>
-    <h1>Krishna Boutique</h1>
+    <!-- =========================== -->
+    <!-- NAVBAR -->
+    <!-- =========================== -->
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a href="about.html">About</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-</header>
+    <header class="product-header">
 
-<section class="products">
+        <div class="product-logo">
 
-    <h2>Our Collection</h2>
+            Krishna Boutique
 
-    <div class="product-grid">
-
-        <div class="product-box">
-            <img src="images/dress1.jpg" alt="">
-            <h3>Stylish Kurti</h3>
-            <p>₹999</p>
-            <button onclick="buyNow()">Buy Now</button>
         </div>
 
-        <div class="product-box">
-            <img src="images/dress2.jpg" alt="">
-            <h3>Wedding Lehenga</h3>
-            <p>₹4999</p>
-            <button onclick="buyNow()">Buy Now</button>
+        <!-- MOBILE MENU BUTTON -->
+
+        <div class="menu-btn" id="menuBtn">
+
+            <i class="fa-solid fa-bars"></i>
+
         </div>
 
-        <div class="product-box">
-            <img src="images/dress3.jpg" alt="">
-            <h3>Party Dress</h3>
-            <p>₹2999</p>
-            <button onclick="buyNow()">Buy Now</button>
+        <!-- NAVIGATION -->
+
+        <nav class="product-nav" id="productNav">
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="products.html">Products</a>
+
+            <a href="#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+    <!-- =========================== -->
+    <!-- HERO SECTION -->
+    <!-- =========================== -->
+
+    <section class="products-hero">
+
+        <div class="hero-overlay"></div>
+
+        <div class="products-hero-content">
+
+            <span class="hero-tag">
+
+                Premium Fashion Collection
+
+            </span>
+
+            <h1>
+
+                Explore Our Latest
+                Boutique Collections
+
+            </h1>
+
+            <p>
+
+                Discover elegant ethnic wear, bridal collections,
+                party dresses and trendy fashion styles specially
+                crafted for modern women.
+
+            </p>
+
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <!-- =========================== -->
+    <!-- FILTER SECTION -->
+    <!-- =========================== -->
 
-<script src="js/products.js"></script>
+    <section class="filter-section">
+
+        <button class="active-filter">All</button>
+
+        <button>Bridal</button>
+
+        <button>Party Wear</button>
+
+        <button>Traditional</button>
+
+        <button>Trending</button>
+
+    </section>
+
+    <!-- =========================== -->
+    <!-- PRODUCTS SECTION -->
+    <!-- =========================== -->
+
+    <section class="products-section">
+
+        <div class="section-title">
+
+            <span>Our Collection</span>
+
+            <h2>
+
+                Trending Boutique Products
+
+            </h2>
+
+        </div>
+
+        <div class="products-container">
+
+            <!-- PRODUCT CARD -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1610030469983-98e550d6193c?q=80&w=1200&auto=format&fit=crop"
+                        alt="Lehenga">
+
+                    <div class="product-icons">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>Designer Lehenga</h3>
+
+                    <p>
+
+                        Elegant bridal lehenga with premium embroidery.
+
+                    </p>
+
+                    <div class="price-box">
+
+                        <span>₹4,999</span>
+
+                        <button>Add To Cart</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT CARD -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1583391733956-6c77a45d58f0?q=80&w=1200&auto=format&fit=crop"
+                        alt="Suit">
+
+                    <div class="product-icons">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>Traditional Suit</h3>
+
+                    <p>
+
+                        Stylish ethnic suit for festivals and occasions.
+
+                    </p>
+
+                    <div class="price-box">
+
+                        <span>₹2,499</span>
+
+                        <button>Add To Cart</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT CARD -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?q=80&w=1200&auto=format&fit=crop"
+                        alt="Party Wear">
+
+                    <div class="product-icons">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>Party Wear Gown</h3>
+
+                    <p>
+
+                        Luxury modern party gown with premium finishing.
+
+                    </p>
+
+                    <div class="price-box">
+
+                        <span>₹3,299</span>
+
+                        <button>Add To Cart</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT CARD -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?q=80&w=1200&auto=format&fit=crop"
+                        alt="Wedding Dress">
+
+                    <div class="product-icons">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>Wedding Collection</h3>
+
+                    <p>
+
+                        Premium wedding fashion collection for brides.
+
+                    </p>
+
+                    <div class="price-box">
+
+                        <span>₹5,999</span>
+
+                        <button>Add To Cart</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT CARD -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?q=80&w=1200&auto=format&fit=crop"
+                        alt="Kurti">
+
+                    <div class="product-icons">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>Stylish Kurti</h3>
+
+                    <p>
+
+                        Comfortable and stylish daily wear kurti collection.
+
+                    </p>
+
+                    <div class="price-box">
+
+                        <span>₹1,499</span>
+
+                        <button>Add To Cart</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <!-- PRODUCT CARD -->
+
+            <div class="product-card">
+
+                <div class="product-image">
+
+                    <img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=1200&auto=format&fit=crop"
+                        alt="Fashion Dress">
+
+                    <div class="product-icons">
+
+                        <i class="fa-solid fa-heart"></i>
+
+                        <i class="fa-solid fa-cart-shopping"></i>
+
+                    </div>
+
+                </div>
+
+                <div class="product-content">
+
+                    <h3>Fashion Dress</h3>
+
+                    <p>
+
+                        Trendy western fashion collection for modern style.
+
+                    </p>
+
+                    <div class="price-box">
+
+                        <span>₹2,899</span>
+
+                        <button>Add To Cart</button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- =========================== -->
+    <!-- OFFER SECTION -->
+    <!-- =========================== -->
+
+    <section class="offer-section">
+
+        <div class="offer-content">
+
+            <span>Special Offer</span>
+
+            <h2>
+
+                Get 20% OFF On
+                New Collection
+
+            </h2>
+
+            <p>
+
+                Limited time offer available on premium boutique products.
+
+            </p>
+
+            <button>
+
+                Shop Now
+
+            </button>
+
+        </div>
+
+    </section>
+
+    <!-- =========================== -->
+    <!-- CONTACT SECTION -->
+    <!-- =========================== -->
+
+    <section class="contact-section" id="contact">
+
+        <div class="contact-left">
+
+            <span>Contact Us</span>
+
+            <h2>
+
+                Visit Krishna Boutique
+
+            </h2>
+
+            <p>
+
+                Visit our boutique in Rohini, Delhi and explore
+                premium fashion collections.
+
+            </p>
+
+            <div class="contact-details">
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    <p>
+
+                        E166, JJ Colony, Sector 25,
+                        Rohini, Delhi
+
+                    </p>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                    <p>
+
+                        +91 9876543210
+
+                    </p>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                    <p>
+
+                        krishnaboutique@gmail.com
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="contact-right">
+
+            <form>
+
+                <input type="text" placeholder="Your Name" required>
+
+                <input type="email" placeholder="Your Email" required>
+
+                <textarea placeholder="Your Message"></textarea>
+
+                <button type="submit">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </section>
+
+    <!-- =========================== -->
+    <!-- FOOTER -->
+    <!-- =========================== -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <h2>
+
+                Krishna Boutique
+
+            </h2>
+
+            <p>
+
+                Elegant Fashion Boutique In Delhi
+
+            </p>
+
+            <div class="footer-icons">
+
+                <i class="fa-brands fa-instagram"></i>
+
+                <i class="fa-brands fa-facebook-f"></i>
+
+                <i class="fa-brands fa-whatsapp"></i>
+
+                <i class="fa-brands fa-youtube"></i>
+
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+
+            © 2026 Krishna Boutique | All Rights Reserved
+
+        </div>
+
+    </footer>
+
+    <!-- =========================== -->
+    <!-- JAVASCRIPT -->
+    <!-- =========================== -->
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
