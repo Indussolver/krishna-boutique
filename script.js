@@ -455,3 +455,205 @@ menuBtn.addEventListener("click", function () {
     mobileNav.classList.toggle("showMenu");
 
 });
+
+// ===============================
+// MOBILE MENU
+// ===============================
+
+const menuBtn = document.getElementById("menuBtn");
+
+const productNav = document.getElementById("productNav");
+
+if(menuBtn){
+
+    menuBtn.addEventListener("click", function(){
+
+        productNav.classList.toggle("showMenu");
+
+    });
+
+}
+
+
+
+// ===============================
+// ADD TO CART BUTTON
+// ===============================
+
+const cartButtons = document.querySelectorAll(".price-box button");
+
+cartButtons.forEach(function(button){
+
+    button.addEventListener("click", function(){
+
+        button.innerHTML = "Added ✓";
+
+        button.style.background = "green";
+
+        setTimeout(function(){
+
+            button.innerHTML = "Add To Cart";
+
+            button.style.background = "#ff2e63";
+
+        }, 2000);
+
+    });
+
+});
+
+
+
+// ===============================
+// HEART ICON EFFECT
+// ===============================
+
+const heartIcons = document.querySelectorAll(".fa-heart");
+
+heartIcons.forEach(function(icon){
+
+    icon.addEventListener("click", function(){
+
+        icon.classList.toggle("active-heart");
+
+        if(icon.classList.contains("active-heart")){
+
+            icon.style.background = "#ff2e63";
+
+            icon.style.color = "white";
+
+        }
+
+        else{
+
+            icon.style.background = "white";
+
+            icon.style.color = "#ff2e63";
+
+        }
+
+    });
+
+});
+
+
+
+// ===============================
+// CONTACT FORM
+// ===============================
+
+const forms = document.querySelectorAll("form");
+
+forms.forEach(function(form){
+
+    form.addEventListener("submit", function(event){
+
+        event.preventDefault();
+
+        alert("Thank You ❤️ Message Sent Successfully!");
+
+        form.reset();
+
+    });
+
+});
+
+
+
+// ===============================
+// PRODUCT CARD ANIMATION
+// ===============================
+
+const productCards = document.querySelectorAll(".product-card");
+
+window.addEventListener("scroll", revealCards);
+
+function revealCards(){
+
+    const triggerBottom = window.innerHeight * 0.85;
+
+    productCards.forEach(function(card){
+
+        const cardTop = card.getBoundingClientRect().top;
+
+        if(cardTop < triggerBottom){
+
+            card.style.opacity = "1";
+
+            card.style.transform = "translateY(0px)";
+
+        }
+
+        else{
+
+            card.style.opacity = "0";
+
+            card.style.transform = "translateY(60px)";
+
+        }
+
+    });
+
+}
+
+revealCards();
+
+productCards.forEach(function(card){
+
+    card.style.transition = "all 0.7s ease";
+
+});
+
+
+
+// ===============================
+// NAVBAR BACKGROUND ON SCROLL
+// ===============================
+
+window.addEventListener("scroll", function(){
+
+    const header = document.querySelector(".product-header");
+
+    if(window.scrollY > 50){
+
+        header.style.background = "rgba(255,255,255,0.98)";
+
+        header.style.boxShadow = "0 5px 20px rgba(0,0,0,0.15)";
+
+    }
+
+    else{
+
+        header.style.background = "rgba(255,255,255,0.95)";
+
+        header.style.boxShadow = "0 4px 20px rgba(0,0,0,0.08)";
+
+    }
+
+});
+
+
+
+// ===============================
+// OFFER BUTTON
+// ===============================
+
+const offerButton = document.querySelector(".offer-content button");
+
+if(offerButton){
+
+    offerButton.addEventListener("click", function(){
+
+        alert("🎉 Congratulations! Offer Applied Successfully.");
+
+    });
+
+}
+
+
+
+// ===============================
+// WEBSITE LOADED
+// ===============================
+
+console.log("Krishna Boutique Products Page Loaded Successfully ✨");
